@@ -218,7 +218,6 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
   }
-  
   .team-member {
     position: relative;
     background-color: #fff;
@@ -228,6 +227,9 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .team-member:hover {
@@ -250,13 +252,10 @@ header {
   .position {
     font-size: 18px;
     color: #888;
+    margin-bottom: 20px;
   }
   
   .additional-info {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px;
@@ -264,12 +263,56 @@ header {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    width: 100%;
   }
   
   .team-member:hover .additional-info {
     opacity: 1;
     pointer-events: auto;
   }
+  
+  /* Testimonials */
+
+    .testimonials {
+      padding: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    
+    .section-heading {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    
+    .testimonial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    
+    .testimonial img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    
+    .testimonial-content {
+      text-align: left;
+    }
+    
+    .testimonial-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .testimonial-author {
+      font-size: 14px;
+      color: #888;
+    }
+    
   
   /* Footer */
 

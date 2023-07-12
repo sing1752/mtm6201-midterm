@@ -164,8 +164,7 @@ header {
   cursor: pointer;
 }
 
-.nav__links a,
-.cta {
+.nav__links a{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -189,19 +188,6 @@ header {
   color: #ffcc00da;
 }
 
-.cta {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
-}
-
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
-
 .nav-img {
   height: 50px;
   width: 50px;
@@ -209,75 +195,168 @@ header {
 
 /* Main */
 
-.hero {
-  position: relative;
+/* Main */
+
+.limited-wrapper {
+  text-align: center;
+  margin-top: 40px;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-}
-
+/* Hero Banner */
 .hero-banner {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-banner img {
   width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-color: black;
-  opacity: 0.8;
+  height: auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: 100px;
+/* Hero Text */
+.limited-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.crossiant-text {
-  font-size: 18px;
-  color: #333;
-  border: 1px solid #333;
-  padding: 5px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.donuts-text {
-  font-size: 18px;
-  color: #333;
-  border: 1px solid #333;
-  padding: 5px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.limited-deals img {
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
-  margin: 50px;
+/* Limited Deals */
+.limited {
+  display: flex;
+  justify-content: center;
 }
 
 .limited-deals {
-  align-items: center;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.hero-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-text {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-overlay-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Plus Card */
+.plus-card {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.plus {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Main Text */
+.hero-main-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate__pulse {
+  animation: pulse 2s infinite;
+}
+
+.animate__heartBeat{
+  animation: pulse 2s infinite;
 }
 
 /* Gallery */
 
 .gallery-h2 {
   text-align: center;
-  font-size: 100px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .gallery-content {
@@ -288,13 +367,15 @@ h1 {
   text-align: center;
   height: 100%;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .gallery-content img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  transition: transform 0.3s ease;
 }
 
 .dessert-name {
@@ -310,13 +391,16 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.gallery-content:hover img {
-  transform: scale(1.05);
+.gallery-content:hover {
+  transform: translateY(-5px);
 }
 
 .gallery-content:hover .dessert-name {
   transform: translateY(0);
 }
+
+
+
 
 /* Footer */
 
