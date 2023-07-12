@@ -75,13 +75,20 @@ table {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: #24252a;
+    background-color: #FECF89;
   }
   
   .logo {
     cursor: pointer;
   }
-  
+
+  .fa-magnifying-glass{
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+
+  }
+
   .nav__links a,
   .cta{
     font-family: "Montserrat", sans-serif;
@@ -125,15 +132,23 @@ table {
     width: 50px;
   }
 
+  /* Main  */
+
+   .hero-banner{
+    height: 600px;
+    max-width: 100%;
+   
+  } 
+
 .hero-back{
     width: auto;
     height: 200px;
-    background-color: black;
+    background-color: #FECF89;
     margin-bottom: 50px;
 
 }
 
-.hero-img-1{
+/* .hero-img-1{
     height: 150px;
     width: 150px;
 }
@@ -141,6 +156,12 @@ table {
 .hero-img-2{
     height: 150px;
     width: 150px;
+} */
+
+.hero img{
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
 }
 
 .hero{
@@ -153,7 +174,7 @@ table {
 .gallery-content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;

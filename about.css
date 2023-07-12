@@ -1,0 +1,73 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #F8F8F8;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      color: #333333;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    
+    .order-form {
+      background-color: #F8F8F8;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: #333333;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form-group input[type="submit"]:hover {
+      background-color: #555555;
+    }
+    
+    .brand-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
