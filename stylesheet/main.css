@@ -246,6 +246,29 @@ header {
   color: white;
 }
 
+
+/* Skip Link */
+/* Skip Link */
+/* Skip Link */
+  .skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .arrow{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color:white;
+    border-radius: 40px;
+  }
+
+  .arrow:hover{
+    
+    background-color: #FFBF69;
+  }
 /* Main */
 
 .crossiant-card{

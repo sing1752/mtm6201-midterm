@@ -222,6 +222,31 @@ header {
 }
 
 
+/* Skip Link */
+/* Skip Link */
+.skip-links{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: start;
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+}
+
+.arrow{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background-color:white;
+  border-radius: 40px;
+}
+
+.arrow:hover{
+  
+  background-color: #FFBF69;
+}
 /* About section */
 
 .about-wrapper {
