@@ -699,3 +699,140 @@ footer {
     
 
   }
+
+  @media screen and (max-width: 768px) {
+    .limited-wrapper {
+      margin-top: 20px;
+    }
+  
+    .limited-hero-text {
+      flex-direction: column;
+    }
+  
+    .limited-deals {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .hero-img {
+      height: 200px;
+    }
+  
+    .card-text {
+      font-size: 20px;
+    }
+  
+    .card-overlay-text {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .plus-card {
+      margin: 10px 0;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      background-color: #FF9F1C;
+      font-size: 20px;
+    }
+    
+    .logo {
+      cursor: pointer;
+    }
+    
+    .fa-search {
+      color: white;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    
+    .nav__links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav__links li {
+      padding: 0px 20px;
+    }
+    
+    .nav__links li a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #edf0f1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .nav__links li a:hover {
+      color: #ffcc00da;
+    }
+    
+    .nav-img {
+      height: 80px;
+      width: 80px;
+      animation: pulsate 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulsate {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .search-bar {
+      display: none; /* Hide the search bar initially on mobile */
+    }
+  }
+
+  
+  /* Navigation Media Query */
+  @media screen and (max-width:768px){
+    header {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* grid-template-rows: repeat(1,1fr); */
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      background-color: #FF9F1C ;
+      font-size: 20px;
+    }
+
+    .nav__links a{
+      justify-content: space-evenly;
+      margin-right: 25px;
+      
+    }
+
+    .logo{
+     text-align: center;
+     margin-bottom: 30px;
+    }
+    .search_bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+  }
+
