@@ -677,11 +677,17 @@ footer {
     z-index: 1;
   }
 }
+
+/* Media queries for featured deals */
   @media screen and (max-width: 768px) {
     .featured-products {
       grid-template-columns: repeat(1, 1fr);
       height: auto;
       grid-gap: 20px;
+      margin: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
     }
     
     .featured-heading {
@@ -701,7 +707,7 @@ footer {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.9);
       z-index: 1;
       opacity: 0;
       transition: opacity 0.3s ease;
@@ -739,9 +745,10 @@ footer {
 
   }
 
+  /* Media queries for limited deals */
   @media screen and (max-width: 768px) {
     .limited-wrapper {
-      margin-top: 20px;
+      margin: 50px;
     }
   
     .limited-hero-text {
