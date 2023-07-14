@@ -246,9 +246,6 @@ header {
   color: white;
 }
 
-
-/* Skip Link */
-/* Skip Link */
 /* Skip Link */
   .skip-links{
     list-style: none;
@@ -270,6 +267,20 @@ header {
     background-color: #FFBF69;
   }
 /* Main */
+
+body h1 {
+  font-family: 'Lilita One', cursive;
+  cursor: pointer;
+}
+
+main h2,h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+main p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.5;
+}
 
 .crossiant-card{
   background-color: #000;
@@ -294,6 +305,7 @@ header {
 }
 
 /* Hero Text */
+
 .limited-hero-text {
   display: flex;
   justify-content: center;
@@ -513,7 +525,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  background-color: lightgoldenrodyellow;
+  background-color: #FFBF69;
   padding: 20px;
   border-radius: 10px;
 }
@@ -742,8 +754,9 @@ footer {
       margin: 20px 0;
     }
   
-    .hero-img {
+    .hero-img .limited-1 {
       height: 200px;
+      object-fit: cover;
     }
   
     .card-text {

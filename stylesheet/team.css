@@ -133,6 +133,8 @@ table {
   border-spacing: 0;
 }
 
+
+
   /* nav */
 
   .team-wrapper {
@@ -260,9 +262,17 @@ table {
   }
   /* Main */
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+
+  /* Fonts */
+
+  body h1 {
+    font-family: 'Lilita One', cursive;
+    color: black;
+    cursor: pointer;
+  }
+  
+  h2{
+    font-family: 'Montserrat', sans-serif;
   }
   
   .container {
