@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/c51741d84b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="icon" type="image/x-icon" href="/images/finest-bakery.png">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <img class="wrapper-img" src="images/wrapper-background.png" alt="background-image">
     <!-- Header Section -->
     <header role="banner">
-      <a class="logo" href="#" aria-label="Logo"><img class="nav-img" src="images/finest-bakery.png" alt="logo"></a>
+      <a class="logo" href="index.html" aria-label="Logo"><img class="nav-img" src="images/finest-bakery.png" alt="logo"></a>
       <nav role="navigation">
         <ul class="nav__links">
           <li><a href="index.html">Home</a></li>
@@ -65,35 +66,36 @@
           </div>
         </div>
       </div>
-
+      
       <h2 class="featured-heading">Featured products</h2>
       <div class="featured-overlay"></div>
-      <div class="featured-products">
-        <div class="product">
+      <div class="featured-products" itemscope itemtype="http://schema.org/ItemList">
+        <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
           <div class="overlay"></div>
-          <img src="images/featured-1.jpg" alt="Product 1">
+          <img src="images/featured-1.jpg" alt="Product 1" itemprop="image">
           <div class="product-info">
-            <h3 class="product-name">Belgian Lava Cake</h3>
-            <p class="product-description">A heavenly combination of flaky croissant and rich chocolate filling.</p>
+            <h3 class="product-name" itemprop="name">Belgian Lava Cake</h3>
+            <p class="product-description" itemprop="description">A heavenly combination of flaky croissant and rich chocolate filling.</p>
           </div>
         </div>
-        <div class="product">
+        <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
           <div class="overlay"></div>
-          <img src="images/featured-2.jpg" alt="Product 2">
+          <img src="images/featured-2.jpg" alt="Product 2" itemprop="image">
           <div class="product-info">
-            <h3 class="product-name">Fruity Muffins</h3>
-            <p class="product-description">Deliciously moist muffins bursting with juicy blueberries and some other fruits.</p>
+            <h3 class="product-name" itemprop="name">Fruity Muffins</h3>
+            <p class="product-description" itemprop="description">Deliciously moist muffins bursting with juicy blueberries and some other fruits.</p>
           </div>
         </div>
-        <div class="product">
+        <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
           <div class="overlay"></div>
-          <img src="images/chocolate-croissant.jpg" alt="Product 3">
+          <img src="images/chocolate-croissant.jpg" alt="Product 3" itemprop="image">
           <div class="product-info">
-            <h3 class="product-name">Chocolate Croissant</h3>
-            <p class="product-description">Indulge in this classic cake with its texture and rich cream cheese frosting.</p>
+            <h3 class="product-name" itemprop="name">Chocolate Croissant</h3>
+            <p class="product-description" itemprop="description">Indulge in this classic cake with its texture and rich cream cheese frosting.</p>
           </div>
         </div>
       </div>
+      
 
       <h2 class="gallery-h2" id="nav">Gallery</h2>
       <div class="gallery">

@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=VT323&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/finest-bakery.png">
   </head>
   <body>
     <div class="about-wrapper">
       <!-- Header Section -->
       <header role="banner">
-        <a class="logo" href="/" role="link"><img class="nav-img" src="images/finest-bakery.png" alt="logo"></a>
+        <a class="logo" href="index.html" role="link"><img class="nav-img" src="images/finest-bakery.png" alt="logo"></a>
         <nav role="navigation">
           <ul class="nav__links">
             <li><a href="index.html">Home</a></li>
@@ -33,7 +34,7 @@
         <li><a href="#nav" aria-label="Skip to Newsletter Section"><img class="arrow" src="images/arrow-bottom.png" alt="Picture of arrow pointing down"></a></li>
       </ul>
       <!-- Main Content Section -->
-      <main class="container" id="main">
+      <main class="container" id="main" itemscope itemtype="http://schema.org/LocalBusiness">
         <div class="background-overlay">
           <img src="images/baker-1.jpg" alt="">
         </div>
@@ -41,10 +42,14 @@
           <img class="background-image" src="images/about-hero.jpg" alt="Background Image">
           <div class="overlay"></div>
           <div class="content">
-            <h2>About Finest Bakery</h2>
-            <p class="hero-des">Finest Bakery is a premier bakery that offers a wide range of freshly baked goods, including bread, pastries, cakes, and cookies. Our experienced bakers use only the finest ingredients to ensure the highest quality and taste in every bite. Whether you're celebrating a special occasion or simply craving a delicious treat, we have something for everyone.</p>
+            <h2 itemprop="name">About Finest Bakery</h2>
+            <p class="hero-des" itemprop="description">Finest Bakery is a premier bakery that offers a wide range of freshly baked goods, including bread, pastries, cakes, and cookies. Our experienced bakers use only the finest ingredients to ensure the highest quality and taste in every bite. Whether you're celebrating a special occasion or simply craving a delicious treat, we have something for everyone.</p>
           </div>
         </div>
+      </main>
+      
+
+        <!-- Order Form -->
         <div class="order-form">
           <h2>Place an Order</h2>
           <form>

@@ -331,14 +331,13 @@ table {
   
   .team-member:hover .additional-info {
     opacity: 1;
-    pointer-events: auto;
   }
   
   /* Testimonials */
 
     .testimonials {
       padding: 40px;
-      background-color: #FFBF69;
+      background-color: #FF9F1C;
       text-align: center;
     }
     
