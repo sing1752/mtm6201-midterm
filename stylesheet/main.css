@@ -149,13 +149,14 @@ table {
   z-index: -1;
 }
 
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as desired */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 header {
@@ -167,10 +168,12 @@ header {
   font-size: 20px;
 }
 
+/* Used for design appeal,changes the cursor shape while on the element */
 .logo {
   cursor: pointer;
 }
 
+/* search bar icon from font awesome library */
 .fa-search {
   color: white;
   margin-left: 20px;
@@ -204,6 +207,7 @@ header {
   animation: pulsate 2s ease-in-out infinite;
 }
 
+/* adding animation for the plus symbol */
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -835,7 +839,7 @@ footer {
     }
     
     .search-bar {
-      display: none; /* Hide the search bar initially on mobile */
+      display: none;
     }
   }
 

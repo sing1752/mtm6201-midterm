@@ -1,7 +1,8 @@
-
-
 /* Reset CSS */
 /* CSS Reset Code */
+/* Reset styles for various HTML elements */
+
+/* Reset default styles and remove margins, paddings, and borders */
 html,
 body,
 div,
@@ -92,6 +93,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
+/* Reset display roles for HTML5 elements */
 article,
 aside,
 details,
@@ -106,20 +108,24 @@ section {
   display: block;
 }
 
+/* Set line-height of body to 1 */
 body {
   line-height: 1;
 }
 
+/* Remove default list styles */
 ol,
 ul {
   list-style: none;
 }
 
+/* Remove quotes from blockquote and q */
 blockquote,
 q {
   quotes: none;
 }
 
+/* Remove quotes from blockquote and q (after pseudo elements) */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -128,265 +134,284 @@ q:after {
   content: none;
 }
 
+/* Collapse table borders and spacing */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* Navigation styles */
 
+/* Wrapper for the team section */
+.team-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-  /* nav */
+/* Background image for the team section */
+.team-wrapper-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
 
-  .team-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .team-wrapper-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #FF9F1C ;
-    font-size: 20px;
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-  
-  .fa-search {
-    color: white;
-    margin-left: 20px;
-    cursor: pointer;
-  }
-  
-  .nav__links a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a:hover {
-    color: #ffcc00da;
-  }
-  
-  .nav-img {
-    height: 80px;
-    width: 80px;
-    animation: pulsate 2s ease-in-out infinite;
-  }
-  
-  @keyframes pulsate {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  #searchbar {
-    padding: 10px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    font-size: 16px;
-    width: 200px;
-    transition: width 0.3s ease;
-  }
-  
-  #searchbar:focus {
-    width: 250px;
-  }
-  
-  .fa-search {
-    margin-left: 5px;
-    color: white;
-    transition: color 0.3s ease;
-  }
-  
-  #searchbar:focus + .fa-search {
-    color: white;
-  }
-  
-  /* Skip Link */
-  .skip-links{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+/* Header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #FF9F1C;
+  font-size: 20px;
+}
 
-  .arrow{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    background-color:white;
-    border-radius: 40px;
-  }
+/* Logo */
 
-  .arrow:hover{
-    
-    background-color: #FFBF69;
-  }
-  /* Main */
+/* Used for design appeal,changes the cursor shape while on the element */
 
+.logo {
+  cursor: pointer;
+}
 
-  /* Fonts */
+/* Search icon */
 
-  body h1 {
-    font-family: 'Lilita One', cursive;
-    color: black;
-    cursor: pointer;
-  }
-  
-  h2{
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px;
-  }
-  
-  .heading {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-  }
-  
-  .team-members {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-  }
-  .team-member {
-    position: relative;
-    background-color: #FFBF69;
-    border-radius: 4px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .team-member:hover {
-    transform: translateY(-5px);
-  }
-  
-  .team-member img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .position {
-    font-size: 18px;
-    color: #EDEDF4;
-    margin-bottom: 20px;
-  }
-  
-  .additional-info {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #EDEDF4;
-    padding: 10px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 100%;
-  }
-  
-  .team-member:hover .additional-info {
-    opacity: 1;
-  }
-  
-  /* Testimonials */
+/* search bar icon from font awesome library */
+.fa-search {
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
 
-    .testimonials {
-      padding: 40px;
-      background-color: #FF9F1C;
-      text-align: center;
-    }
-    
-    .section-heading {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-    
-    .testimonial {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-    
-    .testimonial img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-    
-    .testimonial-content {
-      text-align: left;
-    }
-    
-    .testimonial-text {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    
-    .testimonial-author {
-      font-size: 14px;
-      color: #EDEDF4;
-    }
-    
-  
-  /* Footer */
+/* Navigation links */
+.nav__links a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a:hover {
+  color: #ffcc00da;
+}
+
+/* Logo image */
+.nav-img {
+  height: 80px;
+  width: 80px;
+  animation: pulsate 2s ease-in-out infinite;
+}
+
+/* adding animation for the plus symbol */
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Search bar */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#searchbar {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+#searchbar:focus {
+  width: 250px;
+}
+
+.fa-search {
+  margin-left: 5px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#searchbar:focus + .fa-search {
+  color: white;
+}
+
+/* Skip Link */
+/* Skip link section for accessibility */
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Arrow icon for skip links */
+.arrow {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.arrow:hover {
+  background-color: #FFBF69;
+}
+
+/* Main */
+
+/* Fonts */
+
+/* Heading font */
+body h1 {
+  font-family: 'Lilita One', cursive;
+  color: black;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Team members section */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.team-member {
+  position: relative;
+  background-color: #FFBF69;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 18px;
+  color: #EDEDF4;
+  margin-bottom: 20px;
+}
+
+.additional-info {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #EDEDF4;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
+
+.team-member:hover .additional-info {
+  opacity: 1;
+}
+
+/* Testimonials section */
+
+.testimonials {
+  padding: 40px;
+  background-color: #FF9F1C;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial-content {
+  text-align: left;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #EDEDF4;
+}
+
+/* Footer section */
 
 footer {
   background: #111;
@@ -440,6 +465,7 @@ footer {
   transition: color 0.4s ease;
 }
 
+/* For icons in the footer */
 .socials a:hover i {
   color: aqua;
 }
@@ -463,16 +489,22 @@ footer {
   font-weight: 200;
 }
 
+/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
   /* nav */
+  
+  /* Reduce padding for the header */
   header {
     padding: 20px 5%;
   }
   
+  /* Reduce padding for the navigation links */
   .nav__links li {
     padding: 0px 10px;
   }
   
+  /* Reduce size of the logo image */
   .nav-img {
     height: 40px;
     width: 40px;
@@ -480,20 +512,24 @@ footer {
   
   /* Main */
   
+  /* Reduce padding for the container */
   .container {
     padding: 20px;
   }
   
+  /* Reduce font size and margin for the heading */
   .heading {
     font-size: 24px;
     margin-bottom: 30px;
   }
   
+  /* Adjust grid layout for team members section */
   .team-members {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
   
+  /* Adjust padding and image size for team members */
   .team-member {
     padding: 15px;
   }
@@ -504,6 +540,7 @@ footer {
     margin-bottom: 15px;
   }
   
+  /* Adjust font sizes and margins for team member details */
   .name {
     font-size: 20px;
     margin-bottom: 5px;
@@ -514,12 +551,14 @@ footer {
     margin-bottom: 15px;
   }
   
+  /* Adjust image size for testimonials */
   .testimonial img {
     width: 80px;
     height: 80px;
     margin-right: 15px;
   }
   
+  /* Adjust alignment and text styles for testimonials */
   .testimonial-content {
     text-align: center;
   }
@@ -535,6 +574,7 @@ footer {
   
   /* Footer */
   
+  /* Adjust font sizes for footer content */
   .footer-content h3 {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -544,10 +584,12 @@ footer {
     font-size: 12px;
   }
   
+  /* Adjust icon size for social links */
   .socials a i {
     font-size: 1rem;
   }
   
+  /* Adjust font size for footer bottom text */
   .footer-bottom p {
     font-size: 12px;
   }

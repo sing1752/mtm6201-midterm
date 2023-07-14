@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="icon" type="image/x-icon" href="/images/finest-bakery.png">
 
+  <!-- Google fonts link to embed the fonts in to our project -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -18,9 +19,11 @@
 
 <body>
   <div class="wrapper">
-    <!-- Wrapper Section -->
+    
+    <!-- Wrapper Section which helps in controlling overall structure of the page and is used a belt to tighten everything together -->
     <img class="wrapper-img" src="images/wrapper-background.png" alt="background-image">
-    <!-- Header Section -->
+    
+    <!-- Header Section contains the navigation and it also makes it easier to target the nav and create pleasing file structure -->
     <header role="banner">
       <a class="logo" href="index.html" aria-label="Logo"><img class="nav-img" src="images/finest-bakery.png" alt="logo"></a>
       <nav role="navigation">
@@ -32,17 +35,20 @@
       </nav>
       <div class="search_bar" role="search">
         <input type="text" id="searchbar" placeholder="Search">
+        <!-- Used fonts awesome library for including the search icon -->
         <i class="fa fa-search"></i>
       </div>
     </header>
   </div>
 
   <main>
-    <!-- Skip Links Section -->
+    <!-- Skip Links Section which contains the link to skip the content and go to bottom directly -->
     <ul class="skip-links">
       <li><a href="#nav" aria-label="Skip to Gallery Section"><img class="arrow" src="images/arrow-bottom.png" alt="picture of arrow pointing down"></a></li>
     </ul>
     <!-- Main Content Section -->
+
+    <!-- Added a wrapper for the limited section deal to target and adjust it differently -->
     <div class="limited-wrapper" id="main" role="main">
       <h1 class="hero-main-text animate__animated animate__pulse">Limited time deals</h1>
       <div class="hero">
@@ -51,6 +57,8 @@
             <div class="limited-deals">
               <div class="card crossiant-card" role="link">
                 <picture>
+
+                <!-- For resolution switching as soon as the site switches to the mobile display -->
                   <source srcset="images/limited-1-small.jpg" media="(max-width: 767px)">
                   <img class="hero-img limited-1" src="images/limited-1.jpg" alt="picture of crossiant">
                 </picture>
@@ -64,7 +72,10 @@
                 <img class="plus animate__animated animate__heartBeat" src="images/plus.png" alt="plus symbol">
               </div>
               <div class="card donuts-card" role="link">
-                <img class="hero-img" src="images/limited-2.jpg" alt="picture of donuts with sprinkles">
+                <picture>
+                  <source srcset="images/limited-2-small.jpg" media="(max-width: 767px)">
+                  <img class="hero-img limited-1" src="images/limited-2.jpg" alt="picture of donuts with sprinkles">
+                </picture>
                 <h2 class="card-text">Donut Mania</h2>
                 <div class="card-overlay">
                   <p class="card-overlay-text">Indulge in a variety of mouthwatering donuts.</p>
@@ -78,6 +89,8 @@
 
       <h2 class="featured-heading">Featured products</h2>
       <div class="featured-overlay"></div>
+
+      <!-- Added schema information for the products which further improves the accessibility of the page for certain users with special needs -->
       <div class="featured-products" itemscope itemtype="http://schema.org/ItemList">
         <div class="product" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
           <div class="overlay"></div>
@@ -105,6 +118,7 @@
         </div>
       </div>
 
+      <!-- Added gallery for all the new desserts and gave them on div so that i can target them later css and use the hover to make cards out of them -->
       <h2 class="gallery-h2" id="nav">Gallery</h2>
       <div class="gallery">
         <div class="gallery-content">
@@ -137,11 +151,13 @@
         </div>
         <div class="gallery-content">
           <img class="gallery-content-8" src="images/dessert5.jpg" alt="picture of a green cake with a glass of strawberry shake">
-          <span class="dessert-name">Delux green with shake</span>
+          <span class="dessert-name">Deluxe green with shake</span>
         </div>
       </div>
     </div>
     <!-- Skip Links Section -->
+
+      <!-- Skip Links Section which contains the link to skip the content and go to top directly -->
     <ul class="skip-links">
       <li><a href="#main" aria-label="Skip to Main Content"><img class="arrow" src="images/arrow-up.png" alt=""></a></li>
     </ul>
@@ -152,6 +168,10 @@
         <h3>Finest Bakery</h3>
         <p>We Bake It Fresh</p>
         <ul class="socials">
+
+           <!-- Used # as temporary dead link,just to add little more look and design to the page -->
+
+          <!-- Used fonts awesome library for including the search icon -->
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
